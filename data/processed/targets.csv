@@ -1,0 +1,7 @@
+﻿target_id,target_std,target_class,target_synonyms,record_count
+target_57e243afb3,CB1,cannabinoid receptor,CB1;cannabinoid receptor 1,1
+target_b2e2a11532,DOR,opioid receptor,DOR;DOP;delta opioid receptor;delta-opioid receptor,22
+target_ad0d4c46d7,KOR,opioid receptor,KOR;KOP;kappa opioid receptor;kappa-opioid receptor,23
+target_a42489b055,MOR,opioid receptor,MOR;MOP;mu opioid receptor;mu-opioid receptor,33
+target_3914758685,NOP/ORL1,opioid-like receptor,NOP;ORL1;nociceptin receptor,51
+target_dcc67c8715,hERG,ion channel,hERG;KCNH2;IKr channel,9

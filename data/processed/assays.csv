@@ -1,0 +1,36 @@
+﻿assay_id,target_id,assay_type_std,assay_type_raw,organism_std,cell_line_std,record_count
+assay_2890c96c03,target_3914758685,binding,[35S]GTP-gamma-S,Rattus norvegicus,,1
+assay_eabe545c0d,target_3914758685,binding,binding,,,15
+assay_977e51f37d,target_3914758685,binding,ORL1 binding IC50 from Table 1,Homo sapiens,,8
+assay_3455f6746c,target_3914758685,functional,[35S]GTP-gamma-S,Rattus norvegicus,,1
+assay_26c1714830,target_3914758685,functional,ORL1 antagonism IC50 from Table 4,,,6
+assay_41458e9182,target_3914758685,in_vivo,[35S]GTP-gamma-S,Rattus norvegicus,,5
+assay_abe2537d79,target_3914758685,in_vivo,antitussive in vivo,Cavia porcellus;Rattus norvegicus,,1
+assay_568b44df5e,target_3914758685,in_vivo,antitussive in vivo,Cavia porcellus,,2
+assay_f0837f3ed1,target_53cc30af19,binding,binding,Rattus norvegicus,,2
+assay_3ddeeb714f,target_53cc30af19,functional,functional,,,1
+assay_f50a80d82a,target_57e243afb3,binding,binding,Rattus norvegicus,,1
+assay_3935da3c92,target_74c9b8f9f3,in_vivo,[35S]GTP-gamma-S,,,1
+assay_f15a0954f9,target_a42489b055,antagonist_potency,[35S]GTP-gamma-S,Rattus norvegicus,,2
+assay_a33f9db879,target_a42489b055,binding,[35S]GTP-gamma-S,,,8
+assay_2c42661837,target_a42489b055,in_vivo,[35S]GTP-gamma-S,Rattus norvegicus,,1
+assay_5ef5d701f5,target_a42489b055,in_vivo,in vivo,,,1
+assay_fc647619a3,target_ad0d4c46d7,binding,binding,Rattus norvegicus,,2
+assay_90abad9214,target_ad0d4c46d7,binding,KOR binding IC50 from Table 5,,,1
+assay_18a93a0bd4,target_ad0d4c46d7,in_vivo,[35S]GTP-gamma-S,,,1
+assay_93aaa318b5,target_b16826c426,binding,[35S]GTP-gamma-S,,,3
+assay_515f95691b,target_b16826c426,functional,functional,Rattus norvegicus,,1
+assay_38fefab32a,target_b16826c426,in_vivo,[35S]GTP-gamma-S,,,1
+assay_e41caf0afb,target_c25935b41a,functional,binding,Cavia porcellus;Rattus norvegicus,,1
+assay_f93ca90afa,target_dcc67c8715,binding,hERG binding IC50 from Table 2,,,9
+assay_d0cafda39a,target_de1121aeea,binding,binding,,,4
+assay_471bba10c9,target_de1121aeea,binding,binding,Rattus norvegicus,,1
+assay_9ee96efb04,target_e3effe37ba,binding,binding,,,3
+assay_2105292464,target_e3effe37ba,binding,[35S]GTP-gamma-S,Rattus norvegicus,,1
+assay_27fe64e579,target_e3effe37ba,in_vivo,in vivo,,,3
+assay_edb5f5a929,target_e585298869,antagonist_potency,antagonist potency,,,2
+assay_c1ddf3986e,target_ec987df2fc,binding,binding,,,1
+assay_d041da825d,target_ec987df2fc,binding,binding,Rattus norvegicus,,3
+assay_98f0c2b3e5,target_f1b23ea938,binding,[35S]GTP-gamma-S,,,3
+assay_8f2a44410b,target_f1b23ea938,functional,[35S]GTP-gamma-S,,,2
+assay_dfa6c8f880,target_f773ba6723,in_vivo,antitussive in vivo,Rattus norvegicus,,1

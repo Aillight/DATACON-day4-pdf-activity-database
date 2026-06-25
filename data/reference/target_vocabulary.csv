@@ -1,0 +1,9 @@
+﻿target_std,target_class,target_synonyms
+MOR,opioid receptor,MOR;MOP;mu opioid receptor;mu-opioid receptor
+DOR,opioid receptor,DOR;DOP;delta opioid receptor;delta-opioid receptor
+KOR,opioid receptor,KOR;KOP;kappa opioid receptor;kappa-opioid receptor
+NOP/ORL1,opioid-like receptor,NOP;ORL1;nociceptin receptor
+NPSR,neuropeptide receptor,NPSR;neuropeptide S receptor
+CB1,cannabinoid receptor,CB1;cannabinoid receptor 1
+CB2,cannabinoid receptor,CB2;cannabinoid receptor 2
+hERG,ion channel,hERG;KCNH2;IKr channel

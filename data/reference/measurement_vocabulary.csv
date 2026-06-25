@@ -1,0 +1,11 @@
+﻿measurement_type_std,definition
+Ki,Equilibrium inhibition constant
+IC50,Half-maximal inhibitory concentration
+EC50,Half-maximal effective concentration
+ED50,Median effective dose
+AD50,Median antagonist dose
+Ke,Equilibrium antagonist dissociation constant
+pKi,Negative log10 Ki
+pIC50,Negative log10 IC50
+pEC50,Negative log10 EC50
+pKB,Negative log10 KB antagonist potency

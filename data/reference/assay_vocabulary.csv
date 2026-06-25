@@ -1,0 +1,6 @@
+﻿assay_type_std,definition
+binding,Radioligand or displacement binding assay
+functional,Functional in vitro assay
+antagonist_potency,Antagonist potency assay
+in_vivo,In vivo pharmacology assay
+unknown,Assay type could not be classified automatically
