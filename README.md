@@ -1,4 +1,4 @@
-# PDF Activity Database
+# DataCon PDF Bioactivity Database
 
 Учебный проект DataCon для извлечения биологической активности из PDF-статей
 по медицинской химии и экспорта в CSV. Сохраняются raw-значения,
@@ -31,8 +31,8 @@
 не включены; готовые CSV доступны в [data/processed](data/processed).
 
 ```sh
-git clone https://github.com/Aillight/DATACON-day4-pdf-activity-database.git
-cd DATACON-day4-pdf-activity-database
+git clone https://github.com/Aillight/datacon-pdf-bioactivity-database.git
+cd datacon-pdf-bioactivity-database
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
