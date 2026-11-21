@@ -1,7 +1,7 @@
 # PDF Activity Database
 
-Проект собирает воспроизводимую базу биологической активности из PDF-статей в
-папке `Day 4`. Обработка следует логике презентации: сохраняются raw-значения,
+Учебный проект DataCon для извлечения биологической активности из PDF-статей
+по медицинской химии и экспорта в CSV. Сохраняются raw-значения,
 стандартизованные значения, источник, управляемые словари, флаги ручной
 проверки, дубликаты и потенциальные конфликты.
 
@@ -23,20 +23,63 @@
 - `data/interim/extracted_text/` - опциональный локальный аудит текста при запуске
   с `--save-text`.
 
+## Требования и установка
+
+Нужны Python и PDF с текстовым слоем. Единственная зависимость —
+`pypdf` (версия указана в [requirements.txt](requirements.txt)); используйте
+версию Python, поддерживаемую этой зависимостью. Исходные статьи в репозиторий
+не включены; готовые CSV доступны в [data/processed](data/processed).
+
+```sh
+git clone https://github.com/Aillight/DATACON-day4-pdf-activity-database.git
+cd DATACON-day4-pdf-activity-database
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+В Windows PowerShell вместо двух команд создания и активации окружения:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
 ## Запуск
 
-```powershell
-python -m pip install -r requirements.txt
-python src/build_database.py --pdf-dir .
+Все команды выполняются из корня репозитория. Положите свои PDF в локальную
+папку `articles/`: скрипт читает только файлы `*.pdf` непосредственно в ней,
+без вложенных папок.
+
+Чтобы получить отдельный набор результатов и сохранить опубликованные CSV,
+используйте новый каталог `local-results/`:
+
+```sh
+python src/build_database.py --pdf-dir articles --out local-results/processed/pdf_activity_database.csv --curation-dir local-results/curation --reference-dir local-results/reference --report local-results/processed/validation_report.md --compound-map local-results/curation/compound_identity_map.csv
 ```
 
-При запуске создаются все CSV, отчёт и файлы курации.
-Полный извлечённый текст статей по умолчанию не сохраняется, чтобы не выносить
-лишний copyrighted-контент в GitHub. Для локального аудита можно запустить:
+В нём появятся нормализованные таблицы, отчёт качества и файлы курации.
+`local-results/` не исключён через `.gitignore`: не добавляйте его в коммит,
+если результаты не предназначены для публикации.
 
-```powershell
-python src/build_database.py --pdf-dir . --save-text
+Запуск с путями по умолчанию **перезаписывает** файлы в `data/processed/`,
+очередь ручной проверки и словари. Перед повторной обработкой сохраните
+ручные правки отдельно. Карта соединений читается через `--compound-map`.
+
+Полный текст статей по умолчанию не сохраняется. При необходимости локального
+аудита добавьте к команде `--save-text`; текст появится в
+`data/interim/extracted_text/` (эта папка исключена из Git).
+Не публикуйте исходные статьи и извлечённый текст без права на распространение.
+
+Справка по параметрам:
+
+```sh
+python src/build_database.py --help
 ```
+
+Если появляется `No PDF files found`, проверьте путь, наличие PDF и
+расширение `.pdf` в нижнем регистре. Для сканов потребуется предварительный OCR:
+сам скрипт распознавание изображений не выполняет.
 
 ## Схема обработки
 
